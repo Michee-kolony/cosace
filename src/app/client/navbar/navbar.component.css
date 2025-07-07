@@ -1,0 +1,22 @@
+.mobilemenu{
+  transform: translate(120%);
+  transform-origin: right left;
+  animation: animation1 1s ease forwards;
+}
+
+@keyframes animation1{
+    to{
+        transform: translate(0%);
+    }
+}
+
+.opa{
+  opacity: 0;
+  animation: animation2 1s ease forwards;
+}
+
+@keyframes animation2{
+    to{
+        opacity: 1;
+    }
+}
