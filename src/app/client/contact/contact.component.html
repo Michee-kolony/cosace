@@ -1,0 +1,91 @@
+<div class="min-h-screen bg-gray-100 py-10 px-4 pt-[33%] md:pt-[15%] lg:pt-[9%]">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+    <!-- Formulaire -->
+    <div class="bg-white shadow-xl rounded-xl w-full p-8">
+      <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Nous contacter</h2>
+
+      <form class="space-y-5">
+        <!-- Nom -->
+        <div class="relative">
+          <i class="fa-solid fa-user absolute top-5 left-4 text-gray-400"></i>
+          <input
+            type="text"
+            placeholder="Votre nom"
+            class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="relative">
+          <i class="fa-solid fa-envelope absolute top-5 left-4 text-gray-400"></i>
+          <input
+            type="email"
+            placeholder="Votre adresse email"
+            class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+
+        <!-- Téléphone -->
+        <div class="relative">
+          <i class="fa-solid fa-phone absolute top-5 left-4 text-gray-400"></i>
+          <input
+            type="tel"
+            placeholder="Votre numéro de téléphone"
+            class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+
+        <!-- Message -->
+        <div class="relative">
+          <i class="fa-solid fa-comment-dots absolute top-5 left-4 text-gray-400"></i>
+          <textarea
+            rows="4"
+            placeholder="Votre message"
+            class="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-black"
+          ></textarea>
+        </div>
+
+        <!-- Bouton Envoyer -->
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition-colors"
+        >
+          Envoyer
+        </button>
+      </form>
+    </div>
+
+    <!-- Informations de contact & Carte -->
+    <div class="space-y-6">
+      <!-- Infos -->
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Informations de contact</h3>
+        <p class="flex items-center text-gray-700 mb-2">
+          <i class="fa-solid fa-phone mr-3 text-blue-600"></i> +243 89 123 4567
+        </p>
+        <p class="flex items-center text-gray-700 mb-2">
+          <i class="fa-solid fa-phone mr-3 text-blue-600"></i> +243 97 765 4321
+        </p>
+        <p class="flex items-center text-gray-700 mb-2">
+          <i class="fa-solid fa-envelope mr-3 text-blue-600"></i> contact&#64;cosace.cd
+        </p>
+        <p class="flex items-center text-gray-700">
+          <i class="fa-solid fa-location-dot mr-3 text-blue-600"></i> Av. des Forces Armées, Kinshasa, RDC
+        </p>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.837344086871!2d15.284185015236389!3d-4.32501459659743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a33c123456789%3A0xabcdefabcdefabcd!2sKinshasa!5e0!3m2!1sfr!2scd!4v1700000000000"
+          width="100%"
+          height="280"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>

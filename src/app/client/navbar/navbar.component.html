@@ -1,47 +1,54 @@
-<div class="bg-black fixed top-0 left-0 right-0 z-30 shadow-md">
-    <div class="flex justify-between container py-3">
-        <div><img src="images/Cosace .PNG" class="w-[130px]"/></div>
-        <div class="hidden lg:flex  gap-4 text-white mt-3">
-            <div class="cursor-pointer" routerLink="/">Accueil</div>
-            <div class="cursor-pointer" routerLink="/cosace/about">A propos</div>
-             <div>Nos services</div>
-            <div>Nous contacter</div>
-        </div>
-        <div class="text-gray-600 mt-3 hidden lg:flex">
-            <p><i class="fa-solid fa-phone  bg-white px-[10px] py-[10px] rounded-full shadow-md"></i>  +243 89 XXX XXX XXX</p>
-        </div>
-
-        <div class="lg:hidden" (click)="launchmenu()">
-            <i class="fa-solid fa-bars text-white px-3 mt-3 text-[30px]"></i>
-        </div>
+<!-- Desktop & Mobile Navbar -->
+<div class="bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
+  <div class="container flex justify-between items-center py-4">
+    <!-- Logo -->
+    <div>
+      <img src="images/Logo.PNG" alt="Logo Cosace" class="w-[120px]" />
     </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center gap-6 text-gray-800 font-medium">
+      <div routerLink="/cosace/accueil" class="hover:text-blue-700 transition cursor-pointer">Accueil</div>
+      <div routerLink="/cosace/about" class="hover:text-blue-700 transition cursor-pointer">À propos</div>
+      <div routerLink="/cosace/services" class="hover:text-blue-700 transition cursor-pointer">Nos services</div>
+      <div routerLink="/cosace/contact" class="hover:text-blue-700 transition cursor-pointer">Nous contacter</div>
+    </nav>
+
+    <!-- Contact Info -->
+    <div class="hidden lg:flex items-center text-gray-600">
+      <i class="fa-solid fa-phone bg-blue-600 text-white px-3 py-2 rounded-full shadow mr-2"></i>
+      <span class="font-semibold">+243 89 XXX XXX XXX</span>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="lg:hidden">
+      <button (click)="launchmenu()" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars text-[28px] text-gray-800"></i>
+      </button>
+    </div>
+  </div>
 </div>
 
-
-<div *ngIf="mobile"   class="mobilemenu  fixed top-0 right-0 h-full w-[280px] bg-black/50 backdrop-blur-md z-40 shadow-xl flex flex-col items-start transition-all duration-300 ease-in-out lg:hidden">
+<!-- Mobile Menu Overlay -->
+<div 
+  *ngIf="mobile" 
+  class="fixed inset-0 z-50 bg-white text-gray-800 flex flex-col transition-all duration-300 ease-in-out animate-slideDown lg:hidden"
+>
   <!-- Close Button -->
-  <div class="self-end p-4" (click)="launchmenu()">
-    <i class="fa-solid fa-xmark text-white text-2xl cursor-pointer hover:text-green-400 transition-colors"></i>
+  <div class="flex justify-end p-4">
+    <i class="fa-solid fa-xmark text-2xl cursor-pointer hover:text-blue-600" (click)="launchmenu()"></i>
   </div>
-  
+
   <!-- Menu Items -->
-  <div class="w-full px-6 py-4 space-y-4">
-      <!-- Simple Menu Items -->
-    <div  routerLink="/cosace/accueil" (click)="launchmenu()" class="px-4 py-3 cursor-pointer rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
-      <span class="text-white font-medium text-lg">Accueil</span>
-    </div>
-
-     <div  routerLink="/cosace/about" (click)="launchmenu()" class="px-4 py-3 cursor-pointer rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
-      <span class="text-white font-medium text-lg">A propos</span>
-    </div>
-    
-    <div routerLink="/fonak/contact" (click)="launchmenu()" class="px-4 py-3 cursor-pointer rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
-      <span class="text-white font-medium text-lg">Contact</span>
-    </div>
+  <div class="flex flex-col px-6 space-y-4">
+    <div routerLink="/cosace/accueil" (click)="launchmenu()" class="py-2 px-3 rounded-md hover:bg-blue-100 font-medium">Accueil</div>
+    <div routerLink="/cosace/about" (click)="launchmenu()" class="py-2 px-3 rounded-md hover:bg-blue-100 font-medium">À propos</div>
+    <div routerLink="/cosace/services" (click)="launchmenu()" class="py-2 px-3 rounded-md hover:bg-blue-100 font-medium">Nos services</div>
+    <div routerLink="/cosace/contact" (click)="launchmenu()" class="py-2 px-3 rounded-md hover:bg-blue-100 font-medium">Nous contacter</div>
   </div>
 
-</div>
-
-<div *ngIf="mobile" (click)="launchmenu()" class="fixed bg-black/70 top-0 bottom-0 left-0 right-0 z-30 opa">
-
+  <!-- Contact Info -->
+  <div class="mt-auto p-6 text-sm text-gray-600 border-t">
+    <i class="fa-solid fa-phone mr-2 text-blue-600"></i> +243 89 XXX XXX XXX
+  </div>
 </div>
