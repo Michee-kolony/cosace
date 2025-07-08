@@ -7,7 +7,10 @@
              <div>Nos services</div>
             <div>Nous contacter</div>
         </div>
-        <div></div>
+        <div class="text-gray-600 mt-3 hidden lg:flex">
+            <p><i class="fa-solid fa-phone  bg-white px-[10px] py-[10px] rounded-full shadow-md"></i>  +243 89 XXX XXX XXX</p>
+        </div>
+
         <div class="lg:hidden" (click)="launchmenu()">
             <i class="fa-solid fa-bars text-white px-3 mt-3 text-[30px]"></i>
         </div>
@@ -30,20 +33,6 @@
 
      <div  routerLink="/cosace/about" (click)="launchmenu()" class="px-4 py-3 cursor-pointer rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
       <span class="text-white font-medium text-lg">A propos</span>
-    </div>
-  
-
-     <!-- Accordion Item 2 -->
-    <div class="relative group">
-      <div class="px-4 py-3 cursor-pointer flex items-center justify-between rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
-        <span class="text-white font-medium text-lg">A propos</span>
-        <i class="fa-solid fa-chevron-down text-white text-sm transition-transform duration-300 group-hover:rotate-180"></i>
-      </div>
-      <div class="hidden group-hover:block bg-white/95 text-blue-900 shadow-lg rounded-lg mt-1 ml-4 overflow-hidden">
-        <div routerLink="/fonak/about" (click)="launchmenu()" class="px-4 py-3 hover:bg-blue-600 hover:text-white cursor-pointer transition-colors border-b border-blue-100">Hisotrique</div>
-        <div routerLink="/fonak/cabinet" (click)="launchmenu()" class="px-4 py-3 hover:bg-blue-600 hover:text-white cursor-pointer transition-colors border-b border-blue-100">Comités des gestions</div>
-          <div routerLink="/" class="px-4 py-3 hover:bg-blue-600 hover:text-white cursor-pointer transition-colors border-b border-blue-100">Organigramme</div>
-      </div>
     </div>
     
     <div routerLink="/fonak/contact" (click)="launchmenu()" class="px-4 py-3 cursor-pointer rounded-lg hover:bg-blue-700/60 transition-colors duration-200">
