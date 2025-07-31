@@ -9,14 +9,14 @@ import Splide from '@splidejs/splide';
 export class AccueilComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     new Splide('#splide', {
-  type: 'fade',
-  perPage: 1,
+  type: 'loop',
+  perPage: 2,
   rewind: true,
   gap: '1rem',
   autoplay: true,
   breakpoints: {
     1024: {
-      perPage: 1,
+      perPage: 2,
     },
     768: {
       perPage: 1,
