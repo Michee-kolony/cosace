@@ -14,6 +14,7 @@ export class AccueilComponent implements AfterViewInit {
   rewind: true,
   gap: '1rem',
   autoplay: true,
+  focus: 'center',
   breakpoints: {
     1024: {
       perPage: 2,
