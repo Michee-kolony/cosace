@@ -5,6 +5,7 @@ import { CosaceComponent } from './client/cosace/cosace.component';
 import { AboutComponent } from './client/about/about.component';
 import { ContactComponent } from './client/contact/contact.component';
 import { ActionsComponent } from './client/actions/actions.component';
+import { ServiceComponent } from './client/service/service.component';
 
 const routes: Routes = [
   {path:'', redirectTo: 'cosace', pathMatch: 'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
       {path:'accueil', component: AccueilComponent},
       {path:'about', component: AboutComponent},
       {path:'contact', component: ContactComponent},
-      {path: 'actions', component: ActionsComponent}
+      {path: 'actions', component: ActionsComponent},
+      {path: 'service', component: ServiceComponent}
     ],
   },
 
